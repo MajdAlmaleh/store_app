@@ -1,7 +1,9 @@
+// ignore_for_file: prefer_typing_uninitialized_variables
+
 class ProductModel {
   final int id;
   final String title;
-  final double price;
+  final  price;
   final String description;
   final String image;
   final Rating rating;
@@ -21,12 +23,12 @@ class ProductModel {
         price: jsonData['price'],
         description: jsonData['description'],
         image: jsonData['image'],
-        rating:  Rating.fromjson(jsonData)   );
+        rating:  Rating.fromjson(jsonData['rating'])   );
   }
 }
 
 class Rating {
-  final double rate;
+  final rate;
   final int count;
   Rating({required this.rate, required this.count});
 

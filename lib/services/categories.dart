@@ -1,4 +1,6 @@
 
+// ignore_for_file: missing_required_param
+
 import 'package:store_app/helpers/api.dart';
 import 'package:store_app/models/product_model.dart';
 
